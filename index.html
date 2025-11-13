@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="shortcut icon" href="#">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game.css">
+    <title>Flying Cow's</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <h4>
+                    <li><a href="http://fullmind.eu/website/game/asset.html" target="_blank">Assets</a></li>
+                </h4>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="screen">
+            <div id="game">
+                <div id="game_background" class="hidden">
+                    <img src="svgs/full_backgroundArtboard.svg" alt="Background"></img></div>
+
+            </div>
+            <div id="game_sprites">
+                <div id="a_container1">
+                    <div id="cow"> <img src="svgs/cow_artboard.svg" alt="The Cow"></div>
+                </div>
+                <div id="a_containerA">
+                    <div id="cowA"> <img src="svgs/cow_artboard.svg" alt="The Cow"></div>
+                </div>
+
+                <div id="a_container2">
+                    <div id="devil_cow"> <img src="svgs/devil_cow_artboard.svg" alt="The Devil Cow"></div>
+                </div>
+                <div id="a_containerB">
+                    <div id="devil_cowB"> <img src="svgs/devil_cow_artboard.svg" alt="The Devil Cow"></div>
+                </div>
+            </div>
+            <div id="game_foreground"></div>
+            <div id="game_ui">
+                <div id="score_board" class="hidden"><span id="current_points"></span></div>
+                <div id="health_board" class="hidden"><span id="current_heart"></span></div>
+                <div id="time_board" class="hidden">
+                    <div id="time_sprite"></div>
+                </div>
+                <div id="mute"></div>
+                <div id="unmute"></div>
+            </div>
+            <div id="title_screen" class="hidden">
+                <h1 id="title_screen_text">Flying Cow</h1>
+                <div id="go_button"></div>
+                <div id="info_button"></div>
+            </div>
+            <div id="instructions" class="hidden">
+                <div id="empty_bg" class="hidden"><img src="svgs/empty_backgroundArtboard.svg"
+                        alt="Empty Background"></img></div>
+                <div id="thinking_farmer"></div>
+                <h2 id="instruction_screen_text">Help Farmer Victoria catch her Cows that drank the magical Juice that
+                    makes
+                    them fly away.<p>Watch out for the Devil Cows, catch them and you lose a heart.</h2>
+                <div id="play_button"></div>
+                <div id="exit_button"></div>
+            </div>
+            <div id="game_over" class="hidden">
+                <div id="empty_bg_game_over" class="hidden"><img src="svgs/empty_backgroundArtboard.svg"
+                        alt="Empty Background"></img></div>
+                <div id="sad_farmer"></div>
+                <h1 id="game_over_screen_text">Game Over</h1>
+                <h3>Farmer Victoria Cow's flew away and got lost...</h3>
+                <div id="play_again_button"></div>
+                <div id="home_button"></div>
+            </div>
+            <div id="you_won" class="hidden">
+                <div id="empty_bg_you_won" class="hidden"><img src="svgs/empty_backgroundArtboard.svg"
+                        alt="Empty Background"></img></div>
+                <div id="happy_farmer"></div>
+                <h1 id="you_won_screen_text">You won</h1>
+                <h3>Farmer Victoria will be happy to have her cows back!</h3>
+                <div id="play_again_button_won"></div>
+                <div id="home_button_won"></div>
+            </div>
+            <div>
+                <audio id="click_sound" src="sound/click_sound.mp3"></audio>
+                <audio id="happy_sound" src="sound/good_sound.mp3"></audio>
+                <audio id="evil_sound" src="sound/devil_cow_sound_real.mp3"></audio>
+                <audio id="soundtrack" src="sound/bensound-funnysong.mp3"></audio>
+                <audio id="game_over_sound" src="sound/game_over_sound.mp3"></audio>
+                <audio id="you_won_sound"
+                    src="sound/ftus_american_football_fans_applause_scream_cheer_usa_high_school_238.mp3"></audio>
+            </div>
+        </section>
+        <aside>
+            <h5>Instructions</h5>
+            <h4>Help Farmer Victoria catch her Cows that drank the magical Juice that
+                makes
+                them fly away.<p>Watch out for the Devil Cows, catch them and you lose a heart. <p>
+                        You win by catching 10 cows.
+            </h4>
+            <div id="instructions_devil_cow"><img src="svgs/devil_cow_artboard.svg" alt="The Devil Cow"></div>
+            <div id="one_heart"><img src="svgs/one_full_heartArtboard 8.svg" alt="A heart">
+            </div>
+            <h6>-</h6>
+            <div id="instructions_cow"><img src="svgs/cow_artboard.svg" alt="The Cow"></div>
+            <h7>+ Point</h7>
+
+        </aside>
+    </main>
+    <footer>
+        <h8>Copyrights: Zina Nasr <p>This game was created by Zina Nasr in Apr-May 2021 as part of the course 'Basic
+                Animation' at Copenhagen School of Design and Technology.</p>
+
+            <nav><a href="https://www.linkedin.com/in/zina-nasr-6492a71b1/" target="_blank">LinkedIn</a>
+                <p>
+                    Music credits to:
+                    <a href="https://www.bensound.com" target="_blank">Bensound</a> and
+                    <a href="https://www.zapsplat.com" target="_blank">Zapsplat</a>
+            </nav>
+        </h8>
+    </footer>
+    <script src="scripts/myjs.js"></script>
+</body>
+
+</html>
