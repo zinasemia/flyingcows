@@ -1,0 +1,38 @@
+@import url(//db.onlinewebfonts.com/c/dc63023f6f8b4f1b5e337b67a039f91e?family=DS+Marker+Felt);
+
+.COW {
+    background-color: black
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Marker Felt;
+}
+
+h1 {
+    font-size: 3em
+}
+
+h2 {
+    font-size: 1em
+}
+
+h3 {
+    font-size: 2em
+}
+
+p {
+    font-family: arial
+}
+
+li {
+    font-family: Marker Felt;
+    font-size: 1.5em;
+    list-style: none;
+}
